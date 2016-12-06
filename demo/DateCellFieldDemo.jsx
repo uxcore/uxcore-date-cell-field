@@ -30,9 +30,10 @@ class Demo extends React.Component {
 
   render() {
     const columns = [
-      { dataKey: 'startDate', title: 'Start Date', width: 200, type: 'custom', customField: DateCellField },
+      { dataKey: 'startDate', editKey: 'startVal', title: 'Start Date', width: 200, type: 'custom', customField: DateCellField },
       {
         dataKey: 'endDate',
+        editKey: 'endVal',
         title: 'End Date',
         width: 200,
         type: 'custom',
@@ -65,6 +66,16 @@ class Demo extends React.Component {
 
     const renderProps = {
       jsxcolumns: columns,
+      jsxdata: {
+        data: [
+          {
+            startDate: '2016-01-02',
+            startVal: 1451692800000,
+            endDate: '2016-02-07',
+            endVal: 1454803200000,
+          },
+        ],
+      },
       actionBar: {
         'action button': () => {
           console.log(this.table.getData());

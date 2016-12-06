@@ -11,6 +11,7 @@ const Calendar = require('uxcore-calendar');
 const React = require('react');
 const CellField = require('uxcore-cell-field');
 
+
 class DateCellField extends CellField {
 
   renderContent() {
@@ -22,7 +23,7 @@ class DateCellField extends CellField {
       onSelect(value, formatDateString) {
         me.handleDataChange({
           text: formatDateString,
-          value: formatDateString,
+          value,
         });
         if (config && config.onSelect) {
           config.onSelect(value, formatDateString);
