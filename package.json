@@ -1,6 +1,6 @@
 {
  "name": "uxcore-date-cell-field",
- "version": "0.1.3",
+ "version": "0.1.4",
  "description": "uxcore-date-cell-field component for uxcore.",
  "repository": "https://github.com/uxcore/uxcore-date-cell-field.git",
  "author": "AlphaGo88&lt;83268606@qq.com&gt;",
@@ -38,6 +38,7 @@
   "react": "0.14.x",
   "react-addons-test-utils": "0.14.x",
   "react-dom": "0.14.x",
+  "uxcore-button": "^0.4.5",
   "uxcore-cell-field": "^0.1.1",
   "uxcore-kuma": "2.x",
   "uxcore-table": "^1.12.5",

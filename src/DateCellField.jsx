@@ -23,17 +23,14 @@ class DateCellField extends CellField {
   renderContent() {
     const me = this;
     const config = me.props.column.config;
-    const propsToDelete = ['value', 'data', 'onChange'];
+    const propsToDelete = ['value', 'onSelect'];
     const fieldProps = {
       value: me.props.value,
       onSelect(value, formatDateString) {
         me.handleDataChange({
           text: formatDateString,
-          value,
+          value: value.getTime(),
         });
-        if (config && config.onSelect) {
-          config.onSelect(value, formatDateString);
-        }
       },
     };
     if (config) {

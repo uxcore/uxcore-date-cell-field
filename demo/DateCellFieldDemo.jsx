@@ -8,6 +8,7 @@
 
 const Table = require('uxcore-table');
 const React = require('react');
+const Button = require('uxcore-button');
 
 const DateCellField = require('../src');
 
@@ -19,6 +20,7 @@ class Demo extends React.Component {
     super(props);
     this.state = {
     };
+    this.getData = this.getData.bind(this);
   }
 
   saveRef(refName) {
@@ -26,6 +28,10 @@ class Demo extends React.Component {
     return (c) => {
       me[refName] = c;
     };
+  }
+
+  getData() {
+    console.log(this.table.getData());
   }
 
   render() {
@@ -66,6 +72,7 @@ class Demo extends React.Component {
 
     const renderProps = {
       jsxcolumns: columns,
+      ref: this.saveRef('table'),
       jsxdata: {
         data: [
           {
@@ -84,7 +91,10 @@ class Demo extends React.Component {
     };
 
     return (
-      <Table {...renderProps} ref={this.saveRef('table')} />
+      <div>
+        <Table {...renderProps} ref={this.saveRef('table')} />
+        <Button onClick={this.getData}>获取表格的值</Button>
+      </div>
     );
   }
 }
