@@ -14,6 +14,12 @@ const CellField = require('uxcore-cell-field');
 
 class DateCellField extends CellField {
 
+  /* eslint-disable class-methods-use-this */
+  addSpecificClass() {
+    return 'kuma-date-cell-field';
+  }
+  /* eslint-enable class-methods-use-this */
+
   renderContent() {
     const me = this;
     const config = me.props.column.config;
