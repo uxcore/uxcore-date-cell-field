@@ -29,7 +29,7 @@ class DateCellField extends CellField {
       onSelect(value, formatDateString) {
         me.handleDataChange({
           text: formatDateString,
-          value: value.getTime(),
+          value: value ? value.getTime() : value,
         });
       },
     };
