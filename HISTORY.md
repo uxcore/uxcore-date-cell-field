@@ -1,3 +1,7 @@
+## 0.2.1
+
+* `FIXED` missing dependency `uxcore-cell-field`
+
 ## 0.2.0
 
 * `CHANGED` update `uxcore-calendar` to ~0.7.0
