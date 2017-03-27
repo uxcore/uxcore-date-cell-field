@@ -1,3 +1,7 @@
+## 0.4.0
+
+* `CHANGED` update `uxcore-calendar` to ~0.9.0
+
 ## 0.3.0
 
 * `CHANGED` update `uxcore-calendar` to ~0.8.0
