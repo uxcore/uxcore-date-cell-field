@@ -6,10 +6,11 @@
  * All rights reserved.
  */
 
-const assign = require('object-assign');
-const Calendar = require('uxcore-calendar');
-const React = require('react');
-const CellField = require('uxcore-cell-field');
+import assign from 'object-assign';
+
+import Calendar from 'uxcore-calendar';
+import React from 'react';
+import CellField from 'uxcore-cell-field';
 
 
 class DateCellField extends CellField {
@@ -49,4 +50,4 @@ class DateCellField extends CellField {
 DateCellField.propTypes = assign({}, CellField.propTypes);
 DateCellField.defaultProps = assign({}, CellField.defaultProps);
 
-module.exports = DateCellField;
+export default DateCellField;

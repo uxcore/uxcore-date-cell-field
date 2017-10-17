@@ -6,4 +6,4 @@
  * All rights reserved.
  */
 
-module.exports = require('./DateCellField');
+export default from './DateCellField';
