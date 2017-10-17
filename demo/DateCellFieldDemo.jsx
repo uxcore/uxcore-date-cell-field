@@ -6,11 +6,11 @@
  * All rights reserved.
  */
 
-const Table = require('uxcore-table');
-const React = require('react');
-const Button = require('uxcore-button');
+import Table from 'uxcore-table';
 
-const DateCellField = require('../src');
+import React from 'react';
+import Button from 'uxcore-button';
+import DateCellField from '../src/DateCellField';
 
 const { Constants } = Table;
 
@@ -23,6 +23,10 @@ class Demo extends React.Component {
     this.getData = this.getData.bind(this);
   }
 
+  getData() {
+    console.log(this.table.getData());
+  }
+
   saveRef(refName) {
     const me = this;
     return (c) => {
@@ -30,25 +34,22 @@ class Demo extends React.Component {
     };
   }
 
-  getData() {
-    console.log(this.table.getData());
-  }
 
   render() {
     const columns = [
-      { dataKey: 'startDate', editKey: 'startVal', title: 'Start Date', width: 200, type: 'custom', customField: DateCellField },
+      { dataKey: 'startDate', editKey: 'startVal', title: 'Start Date', width: '200px', type: 'custom', customField: DateCellField },
       {
         dataKey: 'endDate',
         editKey: 'endVal',
         title: 'End Date',
-        width: 200,
+        width: '200px',
         type: 'custom',
         customField: DateCellField,
         config: { locale: 'en-us', placeholder: 'please select date' },
       },
       {
         dataKey: 'action1',
-        width: '120',
+        width: '120px',
         title: 'Operation',
         type: 'action',
         actions: [
@@ -99,4 +100,4 @@ class Demo extends React.Component {
   }
 }
 
-module.exports = Demo;
+export default Demo;
