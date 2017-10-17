@@ -1,3 +1,8 @@
+
+## 0.4.1
+
+`CHANGED` fit React@15
+
 ## 0.4.0
 
 * `CHANGED` update `uxcore-calendar` to ~0.9.0
