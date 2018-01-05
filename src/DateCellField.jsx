@@ -14,7 +14,6 @@ import CellField from 'uxcore-cell-field';
 
 
 class DateCellField extends CellField {
-
   /* eslint-disable class-methods-use-this */
   addSpecificClass() {
     return 'kuma-date-cell-field';

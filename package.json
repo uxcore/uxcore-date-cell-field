@@ -42,9 +42,9 @@
   "react-addons-test-utils": "15.x",
   "react-dom": "15.x",
   "react-test-renderer": "15.x",
-  "uxcore-button": "^0.4.5",
+  "uxcore-button": "*",
   "uxcore-kuma": "*",
-  "uxcore-table": "^1.12.5",
+  "uxcore-table": "*",
   "uxcore-tools": "0.2.x"
  },
  "dependencies": {

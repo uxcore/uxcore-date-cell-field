@@ -7,7 +7,6 @@
  */
 
 import Table from 'uxcore-table';
-
 import React from 'react';
 import Button from 'uxcore-button';
 import DateCellField from '../src/DateCellField';
@@ -15,7 +14,6 @@ import DateCellField from '../src/DateCellField';
 const { Constants } = Table;
 
 class Demo extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
