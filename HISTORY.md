@@ -1,7 +1,11 @@
 
+## 0.5.0
+
+* `CHANGED` update `uxcore-cell-field` to `^0.2.0`
+
 ## 0.4.1
 
-`CHANGED` fit React@15
+* `CHANGED` fit React@15
 
 ## 0.4.0
 
