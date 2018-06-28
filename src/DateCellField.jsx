@@ -7,7 +7,6 @@
  */
 
 import assign from 'object-assign';
-
 import Calendar from 'uxcore-calendar';
 import React from 'react';
 import CellField from 'uxcore-cell-field';

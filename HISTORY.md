@@ -1,4 +1,9 @@
 
+## 0.6.0
+
+* `CHANGED` update `uxcore-calendar` to `^0.10.0`
+* `CHANGED` upgrade scaffold to React@16
+
 ## 0.5.0
 
 * `CHANGED` update `uxcore-cell-field` to `^0.2.0`
